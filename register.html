@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <fieldset id='contant-register'>
+            <legend >Register</legend>
+            <div class="loginRegiserLinkes">
+                <a class='registerLink'href="./register.html">Resgister</a>
+                <span>||</span>
+                <a class='loginLink' href="./login.html">Login</a>
+            </div>
+            <form action="./index.html" id="registerForm">
+                <label for="name">Full Name</label>
+                <br/>
+                <input type="text" name="name" id="name" placeholder="Enter Full Name"/>
+                 <span class="valid valid-name error-alert" style="display: none; color:red">Name must be 3 chars at least</span>
+                 <label for="email">Email</label>
+                <br/>
+                <input type="email" name="email" id="email" placeholder="Enter a valid Email" />
+                <span class="valid valid-email error-alert" style="display: none; color:red;">Please Enter a vaild Email</span>
+                <span class="valid repeat-email error-alert" style="display: none; color:red;">That email is taken. Try another </span>
+                <label for="password">password</label>
+                <br/>
+                <input type="password" name="password" id="password" placeholder="Type your password"  />
+                <span class="valid valid-password error-alert" style="display: none; color:red">Passowrd must be 8 chars at least </span>
+                <label for="confirPassword">Confirm password</label>
+                <br/>
+                <input type="password" name="confirPassword" id="confirPassword" placeholder="Confirm password" />
+                <span class="valid valid-confirPassword error-alert" style="display: none; color:red">Confirm your password </span>
+            <label for="Gender"> Gender </label> 	&nbsp;
+            <input type="radio" value="male" name="gender" id="male" />
+              <label for="male"> Male </label> 	&nbsp; 	&nbsp;
+           
+              <label for="female"> Female </label>
+              <input type="radio" value="female" name="gender" id="female" />
+              
+              <span class="valid valid-gender error-alert" style="display:none; color:red">please select your gender </span>
+        
+                <input type="button" class='form-submit' value="Register" id="registerSubmit">
+                <input type="reset" value="Reset" style='background-color: red;'/>
+              </form>
+           
+        </fieldset>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

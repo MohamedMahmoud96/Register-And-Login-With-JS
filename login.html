@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkCookies()"> 
+    <div id="container">
+        <fieldset id='contant-register'>
+            <legend >Login</legend>
+            <div class="loginRegiserLinkes">
+                <a class='registerLink' href="./register.html">Resgister</a>
+                <span>||</span>
+                <a class='loginLink' href="./login.html">Login</a>
+            </div>
+            <form action="#" id="LoginForm">
+                <span class="valid valid-data error-alert" style="display:none; color:red; text-align: center;">Enter valid email and password  </span>
+                <label for="email">Email</label>
+                <br/>
+                <input type="email" name="email" id="email" placeholder="Enter your email" />
+                
+                <label for="password">password</label>
+                <br/>
+                <input type="password" name="password" id="password" placeholder="Enter your password"/>
+             
+                <br />
+     
+                <input type="button" class='form-submit' value="Login" id="loginSubmit">
+            
+              </form>
+            </fieldset>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
